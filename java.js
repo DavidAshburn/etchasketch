@@ -1,6 +1,7 @@
 const gridHead = document.querySelector('.header');
 const gridLabel = document.querySelector('.label');
 const gridContainer = document.querySelector('.grid-container')
+const resetBtn = document.querySelector('.reset');
 
 let wallSize = 16;
 
@@ -8,10 +9,10 @@ const sketchCell = () => this.classList.add("activeCell");
 
 function resizeGrid () {
 
-	let newSize = prompt("Please enter a new grid size.", "2 - 100 only" );
+	let newSize = prompt("Please enter a new grid size. 2 - 100");
 
 	const currentField = document.querySelectorAll('.grid-column');
-	for(let i=0;, i< currentField.length; i++)
+	for(let i=0; i< currentField.length; i++)
 		{currentField[i].remove();}
 
 	for(let c = 0; c < newSize; c++)
@@ -30,5 +31,6 @@ function resizeGrid () {
 	}
 }
 
-const resetBtn = document.querySelector('.reset');
+
 resetBtn.addEventListener('click', resizeGrid);
+resetBtn.addEventListener('click', () => console.log("click"));
