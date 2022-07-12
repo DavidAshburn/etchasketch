@@ -47,23 +47,23 @@ body {
 .reset {
 	position: absolute;
 	z-index: 2;
-	top: 780px;
-	left: 50px;
+	top: 775px;
+	left: 65px;
 	border-radius: 15px;
 }
 
 .clear {
 	position: absolute;
 	z-index: 2;
-	top: 780px;
-	left: 905px;
+	top: 775px;
+	left: 912px;
 	border-radius: 15px;
 }
 
 .rainbow {
 	position: absolute;
 	z-index: 2;
-	top: 780px;
+	top: 775px;
 	left: 200px;
 	border-radius: 15px;
 }

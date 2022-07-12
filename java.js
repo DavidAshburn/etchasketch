@@ -33,7 +33,9 @@ function startGrid () {
 
 function resizeGrid () {
 
-	let newSize = prompt("Please enter a new grid size. 2 - 100");
+	let newSize = prompt("Please enter a new grid size. 12 - 100");
+	if (newSize > 100) {newSize = 100;}
+	else if (newSize <= 11) {newSize = 12;}
 
 	const currentField = document.querySelectorAll('.grid-column');
 	for(let i=0; i< currentField.length; i++)
@@ -58,7 +60,9 @@ function resizeGrid () {
 
 function rainbowGrid () {
 
-	let newSize = prompt("Please enter a new grid size. 2 - 100");
+	let newSize = prompt("Please enter a new grid size. 12 - 100");
+	if (newSize > 100) {newSize = 100;}
+	else if (newSize <= 11) {newSize = 12;}
 
 	const currentField = document.querySelectorAll('.grid-column');
 	for(let i=0; i< currentField.length; i++)
