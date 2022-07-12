@@ -1,37 +1,53 @@
-.header {
-	display:  flex;
-	height: 3rem;
-	justify-content: start;
+
+body {
+	background: #422000;
+	background-image: url("panels/desk.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw;
 }
 
-.label {
-	font-family: arial;
-	font-size: 1.2rem;
+.sketchimg {
+	position: absolute;
+	height: 800px;
+	top: 65px;
+	left: 35px;
+}
+
+.sketch-toy {
+	display: flex;
+	position: absolute;
+	top: 0px;
+	padding-top: 205px;
+	padding-left: 170px;
 }
 
 .grid-container {
 	display: flex;
-	width: 93vmin;
-	height: 93vmin;
+	width: 700px;
+	height: 490px;
 }
 
 .grid-column {
 	display:  flex;
 	flex-direction: column;
 	flex: 1;
+	background: lightgrey;
 }
 
 .grid-cell {
 	display: flex;
 	flex: 1;
-	transition: background 0.2s;
-	border: 1px dotted lightblue;
+	transition: background 0.15s;
 }
 
 .activeCell {
-	background: #2c03fc;
+	background: #333333;
 }	
 
 .reset {
-
+	position: absolute;
+	z-index: 2;
+	top: 780px;
+	left: 50px;
+	border-radius: 15px;
 }
